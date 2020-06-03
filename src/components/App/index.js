@@ -17,8 +17,17 @@ class App extends React.Component {
     handleListItemClick = (id) => {
       this.setState({activeId: id});
 	}
+
+	handelEditNote = (type, e) => {
+		const notes = [...this.state.notes];
+		const theNote = notes.find((item) => item.id === this.state.activeId);
+		theNote[type] = e.target.value;
+		this.setState({
+			notes,
+		})
+	}
 	
-    render() {
+  render() {
 		const { notes, activeId } = this.state;
 		const activeNote = notes.filter((item) => item.id === activeId)[0];
         return (
@@ -29,7 +38,10 @@ class App extends React.Component {
                 notes={notes}
                 activeId={activeId}
                 onListItemClick={this.handleListItemClick} />
-              {notes.length !== 0 && <Note note={activeNote} />}
+              {
+                notes.length !== 0 &&
+                <Note theNote={activeNote} onEditNote={this.handelEditNote} />
+              }
             </div>
           </div>
         );
