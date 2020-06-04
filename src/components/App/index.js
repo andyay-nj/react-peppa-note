@@ -3,19 +3,20 @@ import './index.css';
 import Header from '../Header';
 import List from '../List';
 import Note from '../Note';
+import { generateId } from '../../util';
 
 class App extends React.Component {
-    state = {
-      notes: [
-        {id:'_dsafd111', title:'제목1',contents:'내용1'},
-        {id:'_dsafd222', title:'제목2',contents:'내용2'},
-        {id:'_dsafd333', title:'제목3',contents:'내용3'},
-      ],
-      activeId: '_dsafd222',
-    }
+  state = {
+    notes: [
+      {id:'_dsafd111', title:'제목1',contents:'내용1'},
+      {id:'_dsafd222', title:'제목2',contents:'내용2'},
+      {id:'_dsafd333', title:'제목3',contents:'내용3'},
+    ],
+    activeId: '_dsafd222',
+  }
 
-    handleListItemClick = (id) => {
-      this.setState({activeId: id});
+  handleListItemClick = (id) => {
+    this.setState({activeId: id});
 	}
 
 	handelEditNote = (type, e) => {
@@ -26,13 +27,28 @@ class App extends React.Component {
 			notes,
 		})
 	}
-	
+  
+  handleAddNote = () => {
+    const id = generateId();
+    this.setState({
+      notes: [
+        ...this.state.notes,
+        {
+          id,
+          title: '제목',
+          contents: '내용',
+        },
+      ],
+      activeId: id,
+    });
+  }
+
   render() {
 		const { notes, activeId } = this.state;
 		const activeNote = notes.filter((item) => item.id === activeId)[0];
         return (
           <div className="app">
-            <Header />
+            <Header onAddNote={this.handleAddNote}/>
             <div className="container">
               <List 
                 notes={notes}

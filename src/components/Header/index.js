@@ -3,13 +3,14 @@ import './index.css';
 
 class Header extends React.Component {
     render() {
+        const { onAddNote } = this.props;
         return (
             <div className="header">
                 <div className="title">
                     <span>Nj's Peppa Note !</span>
                 </div>
                 <div className="buttons">
-                    <button>추가</button>
+                    <button onClick={onAddNote}>추가</button>
                     <button>삭제</button>
                 </div>
             </div>
