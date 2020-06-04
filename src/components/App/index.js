@@ -42,13 +42,25 @@ class App extends React.Component {
       activeId: id,
     });
   }
+  
+  handleDeleteNote = () => {
+    const notes = this.state.notes.filter((item) => item.id !== this.state.activeId);
+
+    this.setState({
+      notes,
+      activeId: notes.length === 0 ? null : notes[0].id,
+    })
+  }
 
   render() {
 		const { notes, activeId } = this.state;
 		const activeNote = notes.filter((item) => item.id === activeId)[0];
         return (
           <div className="app">
-            <Header onAddNote={this.handleAddNote}/>
+            <Header
+              onAddNote={this.handleAddNote}
+              onDeleteNote={this.handleDeleteNote}
+            />
             <div className="container">
               <List 
                 notes={notes}
