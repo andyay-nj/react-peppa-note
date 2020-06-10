@@ -11,7 +11,7 @@ class ListItem extends React.Component {
                 onClick={onClick}
             >
                 <div className="title">{title ? title : '제목'}</div>
-                <div className="list-item-contents">{contents ? contents : '내용'}</div>
+                <div className="contents">{contents ? contents : '내용'}</div>
             </div>
         );
     }

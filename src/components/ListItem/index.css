@@ -1,0 +1,14 @@
+div.list-item {
+    padding: 10px 20px;
+    border-bottom: 0.1px solid #80808040;
+}
+div.list-item.active {
+    background-color: #8080802e;
+}
+div.list-item > div.title {
+    font-weight: bold;
+}
+div.list-item > div.contents {
+    font-size: 14px;
+    color: gray;
+}
