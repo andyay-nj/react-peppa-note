@@ -7,11 +7,15 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <div className="title">
-                    <span>Nj's Peppa Note !</span>
+                    <span>NJ's PEPPA NOTE</span>
                 </div>
                 <div className="buttons">
-                    <button onClick={onAddNote}>추가</button>
-                    <button onClick={onDeleteNote}>삭제</button>
+                    <button className="add" onClick={onAddNote}>
+                        <img className="image" src="/static/media/plus2.png"></img>
+                    </button>
+                    <button className="del" onClick={onAddNote}>
+                        <img className="image" src="../../images/plus2.png"></img>
+                    </button>                    
                 </div>
             </div>
         );
