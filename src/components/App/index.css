@@ -1,3 +1,9 @@
+div.app {
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr;
+}
+
 div.container {
     display: grid;
     grid-template-columns: 1fr 1.4fr;

@@ -1,29 +1,33 @@
 div.header {
     display: flex;
     flex-direction: row;
-    padding: 10px 25px;
-    font-weight: bold;
+    padding: 0 25px;
+    height: 40px;
+    border-bottom: 0.1px solid #80808040;
 }
 
-div.header > div.title {
-    flex: none;
+div.header > div.title > span {
+    line-height: 39px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 div.header > div.buttons {
     margin-left: auto;
+    width: 60px;
+    position: relative;
+    overflow: hidden;
 }
 
-img.add {
-    /* background-image: url('../../images/plus2.png'); */
-    border: 0;
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
-img.del {
-    /* background-image: url('../../images/trash4.png'); */
-}
-
-img.image {
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
+div.header > div.buttons > button.add > img.image {
+    position: absolute;
+    width: 119%;
+    top: -13px;
+    left: -5px;
 }
