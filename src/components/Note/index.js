@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import peppa15 from '../../image/peppa/peppa15.png';
 
 class Note extends React.Component {
     render() {
@@ -15,6 +16,10 @@ class Note extends React.Component {
                     className="note-contents"
                     value={contents}
                     onChange={(e) => onEditNote('contents', e)}></textarea>
+                <div className="title-logo">
+                    <img className="image" src={peppa15}></img>
+                </div>
+                {/* <div><img className="image" src={peppa1}></img></div> */}
             </div>
         );
     }

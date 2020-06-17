@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDDOM from 'react-dom';
-import './index.css';
+import './global.css';
 import App from './components/App';
 import { unregister } from './serviceWorker';
 
