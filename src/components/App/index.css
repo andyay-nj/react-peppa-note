@@ -1,10 +1,27 @@
-div.app {
+.app {
     display: grid;
     height: 100%;
     grid-template-rows: auto 1fr;
 }
-
-div.container {
+.app-container {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
+}
+.app-remove {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.app-remove-icon {
+    position: absolute;
+    width: 80%;
+    top: 4px;
+    left: 4px;
+    transform: rotate(-2deg);
+}
+.app-remove-icon:hover {
+    top: 0px;
+    transform: rotate(20deg);
 }

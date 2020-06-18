@@ -4,6 +4,7 @@ import Header from '../Header';
 import List from '../List';
 import Note from '../Note';
 import { generateId } from '../../util';
+import peppa7 from '../../image/peppa/peppa7.jpg';
 
 class App extends React.Component {
   state = {
@@ -61,7 +62,7 @@ class App extends React.Component {
               onAddNote={this.handleAddNote}
               onDeleteNote={this.handleDeleteNote}
             />
-            <div className="container">
+            <div className="app-container">
               <List 
                 notes={notes}
                 activeId={activeId}
@@ -70,6 +71,9 @@ class App extends React.Component {
                 notes.length !== 0 &&
                 <Note theNote={activeNote} onEditNote={this.handelEditNote} />
               }
+            </div>
+            <div className="app-remove" onClick={this.handleDeleteNote}>
+                <img className="app-remove-icon" src={peppa7}></img>
             </div>
           </div>
         );
