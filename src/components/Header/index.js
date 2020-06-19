@@ -17,9 +17,6 @@ class Header extends React.Component {
                     <button className="header-add" onClick={onAddNote}>
                         <img className="header-image" src={peppa6}></img>
                     </button>
-                    {/* <button className="del" onClick={onAddNote}>
-                        <img className="image" src={plus2}></img>
-                    </button>                     */}
                 </div>
             </div>
         );
