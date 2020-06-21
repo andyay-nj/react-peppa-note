@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/11andyay-nj/react-peppa-note/static/css/main.88fb3cd6.chunk.css",
-    "main.js": "/11andyay-nj/react-peppa-note/static/js/main.0e32e7f9.chunk.js",
-    "main.js.map": "/11andyay-nj/react-peppa-note/static/js/main.0e32e7f9.chunk.js.map",
-    "runtime-main.js": "/11andyay-nj/react-peppa-note/static/js/runtime-main.3587c58b.js",
-    "runtime-main.js.map": "/11andyay-nj/react-peppa-note/static/js/runtime-main.3587c58b.js.map",
-    "static/js/2.1e458b10.chunk.js": "/11andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js",
-    "static/js/2.1e458b10.chunk.js.map": "/11andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js.map",
-    "index.html": "/11andyay-nj/react-peppa-note/index.html",
-    "precache-manifest.6dd82e366b762dbd09cbe0269b3c3f5c.js": "/11andyay-nj/react-peppa-note/precache-manifest.6dd82e366b762dbd09cbe0269b3c3f5c.js",
-    "service-worker.js": "/11andyay-nj/react-peppa-note/service-worker.js",
-    "static/css/main.88fb3cd6.chunk.css.map": "/11andyay-nj/react-peppa-note/static/css/main.88fb3cd6.chunk.css.map",
-    "static/js/2.1e458b10.chunk.js.LICENSE.txt": "/11andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js.LICENSE.txt",
-    "static/media/peppa6.png": "/11andyay-nj/react-peppa-note/static/media/peppa6.a8004c86.png",
-    "static/media/peppa7.jpg": "/11andyay-nj/react-peppa-note/static/media/peppa7.a9bd1d16.jpg"
+    "main.css": "/static/css/main.88fb3cd6.chunk.css",
+    "main.js": "/static/js/main.f5c3ff58.chunk.js",
+    "main.js.map": "/static/js/main.f5c3ff58.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d2b24d61.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d2b24d61.js.map",
+    "static/js/2.1e458b10.chunk.js": "/static/js/2.1e458b10.chunk.js",
+    "static/js/2.1e458b10.chunk.js.map": "/static/js/2.1e458b10.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4e73666253d5fbec57a7089deb237581.js": "/precache-manifest.4e73666253d5fbec57a7089deb237581.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.88fb3cd6.chunk.css.map": "/static/css/main.88fb3cd6.chunk.css.map",
+    "static/js/2.1e458b10.chunk.js.LICENSE.txt": "/static/js/2.1e458b10.chunk.js.LICENSE.txt",
+    "static/media/peppa6.png": "/static/media/peppa6.a8004c86.png",
+    "static/media/peppa7.jpg": "/static/media/peppa7.a9bd1d16.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3587c58b.js",
+    "static/js/runtime-main.d2b24d61.js",
     "static/js/2.1e458b10.chunk.js",
     "static/css/main.88fb3cd6.chunk.css",
-    "static/js/main.0e32e7f9.chunk.js"
+    "static/js/main.f5c3ff58.chunk.js"
   ]
 }
