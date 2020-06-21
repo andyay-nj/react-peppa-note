@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/andyay-nj/react-peppa-note/static/css/main.88fb3cd6.chunk.css",
-    "main.js": "/andyay-nj/react-peppa-note/static/js/main.982c62c2.chunk.js",
-    "main.js.map": "/andyay-nj/react-peppa-note/static/js/main.982c62c2.chunk.js.map",
-    "runtime-main.js": "/andyay-nj/react-peppa-note/static/js/runtime-main.b6355686.js",
-    "runtime-main.js.map": "/andyay-nj/react-peppa-note/static/js/runtime-main.b6355686.js.map",
-    "static/js/2.1e458b10.chunk.js": "/andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js",
-    "static/js/2.1e458b10.chunk.js.map": "/andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js.map",
-    "index.html": "/andyay-nj/react-peppa-note/index.html",
-    "precache-manifest.43f811cbd76e661ffcfbfc27b1ac96d4.js": "/andyay-nj/react-peppa-note/precache-manifest.43f811cbd76e661ffcfbfc27b1ac96d4.js",
-    "service-worker.js": "/andyay-nj/react-peppa-note/service-worker.js",
-    "static/css/main.88fb3cd6.chunk.css.map": "/andyay-nj/react-peppa-note/static/css/main.88fb3cd6.chunk.css.map",
-    "static/js/2.1e458b10.chunk.js.LICENSE.txt": "/andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js.LICENSE.txt",
-    "static/media/peppa6.png": "/andyay-nj/react-peppa-note/static/media/peppa6.a8004c86.png",
-    "static/media/peppa7.jpg": "/andyay-nj/react-peppa-note/static/media/peppa7.a9bd1d16.jpg"
+    "main.css": "/11andyay-nj/react-peppa-note/static/css/main.88fb3cd6.chunk.css",
+    "main.js": "/11andyay-nj/react-peppa-note/static/js/main.0e32e7f9.chunk.js",
+    "main.js.map": "/11andyay-nj/react-peppa-note/static/js/main.0e32e7f9.chunk.js.map",
+    "runtime-main.js": "/11andyay-nj/react-peppa-note/static/js/runtime-main.3587c58b.js",
+    "runtime-main.js.map": "/11andyay-nj/react-peppa-note/static/js/runtime-main.3587c58b.js.map",
+    "static/js/2.1e458b10.chunk.js": "/11andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js",
+    "static/js/2.1e458b10.chunk.js.map": "/11andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js.map",
+    "index.html": "/11andyay-nj/react-peppa-note/index.html",
+    "precache-manifest.6dd82e366b762dbd09cbe0269b3c3f5c.js": "/11andyay-nj/react-peppa-note/precache-manifest.6dd82e366b762dbd09cbe0269b3c3f5c.js",
+    "service-worker.js": "/11andyay-nj/react-peppa-note/service-worker.js",
+    "static/css/main.88fb3cd6.chunk.css.map": "/11andyay-nj/react-peppa-note/static/css/main.88fb3cd6.chunk.css.map",
+    "static/js/2.1e458b10.chunk.js.LICENSE.txt": "/11andyay-nj/react-peppa-note/static/js/2.1e458b10.chunk.js.LICENSE.txt",
+    "static/media/peppa6.png": "/11andyay-nj/react-peppa-note/static/media/peppa6.a8004c86.png",
+    "static/media/peppa7.jpg": "/11andyay-nj/react-peppa-note/static/media/peppa7.a9bd1d16.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6355686.js",
+    "static/js/runtime-main.3587c58b.js",
     "static/js/2.1e458b10.chunk.js",
     "static/css/main.88fb3cd6.chunk.css",
-    "static/js/main.982c62c2.chunk.js"
+    "static/js/main.0e32e7f9.chunk.js"
   ]
 }
