@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-peppa-note/precache-manifest.3712ca5ca0426de0008c41e6e82da47f.js"
+  "/react-peppa-note/precache-manifest.37ded232967bd843d5a3962807addf55.js"
 );
 
 self.addEventListener('message', (event) => {

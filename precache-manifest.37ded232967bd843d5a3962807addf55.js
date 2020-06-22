@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55979cc9d757b2569881af50c9afa231",
+    "revision": "3bc5101df4e708c835d16deea376ed23",
     "url": "/react-peppa-note/index.html"
   },
   {
-    "revision": "2f80183d5f29f1f00c25",
+    "revision": "79587f919872a1662045",
     "url": "/react-peppa-note/static/css/main.88fb3cd6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-peppa-note/static/js/2.1e458b10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2f80183d5f29f1f00c25",
-    "url": "/react-peppa-note/static/js/main.4dc5bf21.chunk.js"
+    "revision": "79587f919872a1662045",
+    "url": "/react-peppa-note/static/js/main.54ba0eea.chunk.js"
   },
   {
     "revision": "68cfe226e562b0c07817",
