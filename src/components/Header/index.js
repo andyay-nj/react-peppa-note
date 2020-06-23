@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-// import peppa7 from '../../image/peppa/peppa7.jpg';
 import peppa6 from '../../image/peppa/peppa6.png';
 
 class Header extends React.Component {
