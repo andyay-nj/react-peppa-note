@@ -19,9 +19,9 @@
     width: 80%;
     top: 4px;
     left: 4px;
-    transform: rotate(-2deg);
+    transform: rotate(-2deg) scale(-1, 1);
 }
 .app-remove-icon:hover {
-    top: 0px;
-    transform: rotate(20deg);
+    top: 5px;
+    transform: rotate(20deg) scale(-1, 1);
 }
