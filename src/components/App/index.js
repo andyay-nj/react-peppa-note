@@ -6,6 +6,8 @@ import Note from '../Note';
 import { generateId } from '../../util';
 import peppa7 from '../../image/peppa/peppa7.jpg';
 
+const databaseURL = '';
+
 class App extends React.Component {
   state = {
     notes: [
