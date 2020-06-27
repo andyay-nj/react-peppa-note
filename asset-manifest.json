@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-peppa-note/static/css/main.88fb3cd6.chunk.css",
-    "main.js": "/react-peppa-note/static/js/main.4dc5bf21.chunk.js",
-    "main.js.map": "/react-peppa-note/static/js/main.4dc5bf21.chunk.js.map",
-    "runtime-main.js": "/react-peppa-note/static/js/runtime-main.6e4ba604.js",
-    "runtime-main.js.map": "/react-peppa-note/static/js/runtime-main.6e4ba604.js.map",
-    "static/js/2.1e458b10.chunk.js": "/react-peppa-note/static/js/2.1e458b10.chunk.js",
-    "static/js/2.1e458b10.chunk.js.map": "/react-peppa-note/static/js/2.1e458b10.chunk.js.map",
+    "main.css": "/react-peppa-note/static/css/main.118b014f.chunk.css",
+    "main.js": "/react-peppa-note/static/js/main.3ffcffc0.chunk.js",
+    "main.js.map": "/react-peppa-note/static/js/main.3ffcffc0.chunk.js.map",
+    "runtime-main.js": "/react-peppa-note/static/js/runtime-main.a4af7f5c.js",
+    "runtime-main.js.map": "/react-peppa-note/static/js/runtime-main.a4af7f5c.js.map",
+    "static/js/2.574bdda7.chunk.js": "/react-peppa-note/static/js/2.574bdda7.chunk.js",
+    "static/js/2.574bdda7.chunk.js.map": "/react-peppa-note/static/js/2.574bdda7.chunk.js.map",
     "index.html": "/react-peppa-note/index.html",
-    "precache-manifest.3712ca5ca0426de0008c41e6e82da47f.js": "/react-peppa-note/precache-manifest.3712ca5ca0426de0008c41e6e82da47f.js",
+    "precache-manifest.713713266861dde3bde01f4f38ae1ea8.js": "/react-peppa-note/precache-manifest.713713266861dde3bde01f4f38ae1ea8.js",
     "service-worker.js": "/react-peppa-note/service-worker.js",
-    "static/css/main.88fb3cd6.chunk.css.map": "/react-peppa-note/static/css/main.88fb3cd6.chunk.css.map",
-    "static/js/2.1e458b10.chunk.js.LICENSE.txt": "/react-peppa-note/static/js/2.1e458b10.chunk.js.LICENSE.txt",
+    "static/css/main.118b014f.chunk.css.map": "/react-peppa-note/static/css/main.118b014f.chunk.css.map",
+    "static/js/2.574bdda7.chunk.js.LICENSE.txt": "/react-peppa-note/static/js/2.574bdda7.chunk.js.LICENSE.txt",
     "static/media/peppa6.png": "/react-peppa-note/static/media/peppa6.a8004c86.png",
     "static/media/peppa7.jpg": "/react-peppa-note/static/media/peppa7.a9bd1d16.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e4ba604.js",
-    "static/js/2.1e458b10.chunk.js",
-    "static/css/main.88fb3cd6.chunk.css",
-    "static/js/main.4dc5bf21.chunk.js"
+    "static/js/runtime-main.a4af7f5c.js",
+    "static/js/2.574bdda7.chunk.js",
+    "static/css/main.118b014f.chunk.css",
+    "static/js/main.3ffcffc0.chunk.js"
   ]
 }
