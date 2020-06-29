@@ -5,10 +5,17 @@ import List from '../List';
 import Note from '../Note';
 import { generateId } from '../../util';
 import peppa7 from '../../image/peppa/peppa7.jpg';
+import { fire, getFireDB } from '../../firebaseConfig';
 
 const databaseURL = '';
 
 class App extends React.Component {
+  
+  constructor() {
+    super();
+    fire();
+  }
+
   state = {
     notes: [
       {id:'_dsafd111', title:'제목1',contents:'내용1'},
@@ -16,6 +23,15 @@ class App extends React.Component {
       {id:'_dsafd333', title:'제목3',contents:'내용3'},
     ],
     activeId: '_dsafd222',
+    memo: [],
+  }
+
+  componentDidMount() {
+    getFireDB().then(res => {
+      this.state({
+        memo: res.val.memos
+      });
+    })
   }
 
   handleListItemClick = (id) => {
@@ -56,7 +72,8 @@ class App extends React.Component {
   }
 
   render() {
-		const { notes, activeId } = this.state;
+    const { notes, activeId, memo } = this.state;
+    console.log(memo);
 		const activeNote = notes.filter((item) => item.id === activeId)[0];
         return (
           <div className="app">
