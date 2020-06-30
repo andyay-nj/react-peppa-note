@@ -7,7 +7,7 @@ import { generateId } from '../../util';
 import peppa7 from '../../image/peppa/peppa7.jpg';
 import { fire, getFireDB } from '../../firebaseConfig';
 
-const databaseURL = '';
+const databaseURL = ''; //temp
 
 class App extends React.Component {
   
