@@ -1,14 +1,16 @@
 import * as firebase from 'firebase';
 
 let database;
-let config = {
+const config = {
     apiKey: "AIzaSyBfJBVDWe2i01MMl0TY9wngqlUXvDczryY",
-    authDomain: "firebase-adminsdk-r1n1a@peppa-note.iam.gserviceaccount.com",
+    authDomain: "peppa-note.firebaseapp.com",
     databaseURL: "https://peppa-note.firebaseio.com",
     projectId: "peppa-note",
-    storageBucket: "XXX",
-    messagingSenderId: "XXX",
-}
+    storageBucket: "peppa-note.appspot.com",
+    messagingSenderId: "405266958541",
+    appId: "1:405266958541:web:cdf9a3add82f4d7ef70184",
+    measurementId: "G-L4FH0EVH1F"
+};
 
 const fire = () => {
     if (!firebase.apps.length) {
