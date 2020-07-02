@@ -4,7 +4,7 @@ import peppa6 from '../../image/peppa/peppa6.png';
 
 class Header extends React.Component {
     render() {
-        const { onAddNote, onDeleteNote } = this.props;
+        const { onAddNote } = this.props;
         return (
             <div className="header">
                 <div className="header-title">
@@ -14,7 +14,7 @@ class Header extends React.Component {
                 </div>
                 <div className="header-buttons">
                     <button className="header-add" onClick={onAddNote}>
-                        <img className="header-image" src={peppa6}></img>
+                        <img className="header-image" src={peppa6} alt="add"></img>
                     </button>
                 </div>
             </div>

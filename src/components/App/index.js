@@ -7,8 +7,6 @@ import { generateId } from '../../util';
 import peppa7 from '../../image/peppa/peppa7.jpg';
 import { fire, getFireDB } from '../../firebaseConfig';
 
-const databaseURL = ''; //temp
-
 class App extends React.Component {
   
   constructor() {
@@ -92,7 +90,7 @@ class App extends React.Component {
               }
             </div>
             <div className="app-remove" onClick={this.handleDeleteNote}>
-                <img className="app-remove-icon" src={peppa7}></img>
+                <img className="app-remove-icon" src={peppa7} alt="remove"></img>
             </div>
           </div>
         );
