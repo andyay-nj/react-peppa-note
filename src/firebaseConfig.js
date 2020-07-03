@@ -15,7 +15,6 @@ const config = {
     measurementId: "G-L4FH0EVH1F"
 };
 
-
 const fire = () => {
     // if (!firebase.apps.length) {
     //     // Initialize the default app
