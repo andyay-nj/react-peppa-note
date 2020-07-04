@@ -1,9 +1,6 @@
-import * as firebase from 'firebase';
-
+import firebase from 'firebase';
 import 'firebase/firestore';
-// import * as admin from 'firebase-admin';
 
-let database;
 const config = {
     apiKey: "AIzaSyBfJBVDWe2i01MMl0TY9wngqlUXvDczryY",
     authDomain: "peppa-note.firebaseapp.com",
@@ -15,20 +12,8 @@ const config = {
     measurementId: "G-L4FH0EVH1F"
 };
 
-const fire = () => {
-    // if (!firebase.apps.length) {
-    //     // Initialize the default app
-    //     firebase.initializeApp(config);
-    // }
-    firebase.initializeApp();
-    firebase.database();
-};
+firebase.initializeApp(config);
+const firestore = firebase.firestore();
+const firedb = firebase.database();
 
-const auth = firebase.auth();
-
-const userId = auth.currentUser.uid;
-const getFireDB = () => {
-    return database.ref('/note' + userId).once('value');
-}
-
-export { fire, getFireDB };
+export { firestore, firedb };

@@ -12,7 +12,7 @@
     white-space: nowrap;
     overflow: hidden;
 }
-.list-contents {
+.list-content {
     font-size: 14px;
     color: gray;
     text-overflow: ellipsis;

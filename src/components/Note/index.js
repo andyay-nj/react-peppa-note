@@ -4,7 +4,8 @@ import './index.css';
 class Note extends React.Component {
     render() {
         const { theNote, onEditNote } = this.props;
-        const { title, contents } = theNote;
+        console.log('nnnnnnnn', this.props, theNote)
+        const { title, content } = theNote;
         return (
             <div className="note">
                 <div className="note-wrapper">
@@ -13,9 +14,9 @@ class Note extends React.Component {
                         value={title}
                         onChange={(e) => onEditNote('title', e)} />
                     <textarea
-                        className="note-contents"
-                        value={contents}
-                        onChange={(e) => onEditNote('contents', e)}></textarea>
+                        className="note-content"
+                        value={content}
+                        onChange={(e) => onEditNote('content', e)}></textarea>
                 </div>
             </div>
         );

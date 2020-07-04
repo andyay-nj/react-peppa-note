@@ -3,7 +3,7 @@ import './index.css';
 
 class ListItem extends React.Component {
     render() {
-		const { active, title, contents, onClick } = this.props;
+		const { active, title, content, onClick } = this.props;
 		
         return (
             <div
@@ -11,7 +11,7 @@ class ListItem extends React.Component {
                 onClick={onClick}
             >
                 <div className="list-title">{title ? title : '제목'}</div>
-                <div className="list-contents">{contents ? contents : '내용'}</div>
+                <div className="list-content">{content ? content : '내용'}</div>
             </div>
         );
     }
