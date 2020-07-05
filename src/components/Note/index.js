@@ -3,8 +3,8 @@ import './index.css';
 
 class Note extends React.Component {
     render() {
+        console.log(this.props)
         const { theNote, onEditNote } = this.props;
-        console.log('nnnnnnnn', this.props, theNote)
         const { title, content } = theNote;
         return (
             <div className="note">

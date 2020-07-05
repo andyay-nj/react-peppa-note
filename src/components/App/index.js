@@ -6,10 +6,32 @@ import List from '../List';
 import Note from '../Note';
 import { generateId } from '../../util';
 import peppa7 from '../../image/peppa/peppa7.jpg';
-import { firestore, firedb } from '../../firebaseConfig';
+import { firestore, firebase, firedb } from '../../firebaseConfig';
 
 class App extends React.Component {
     state = stateObj;
+    
+    constructor() {
+        super();
+        firebase.database().ref().child('note').limitToFirst(1).once('value', (data) => {
+            console.log(data)
+            console.log(data.val())
+        })
+        
+        // get()
+        // .then(docs => {
+        //     console.log(docs[0])
+            
+        //     docs.forEach(doc => {
+        //         if (doc.data()){
+        //             this.setState({ activeId: doc.data().id });
+        //         } else {
+        //             console.log('no?????')
+        //             throw break;
+        //         }
+        //     });
+        // });
+    }
 
     componentWillMount() {
         const notes = this.state.notes;
@@ -35,10 +57,12 @@ class App extends React.Component {
 	handelEditNote = (type, e) => {
 		const notes = [...this.state.notes];
 		const theNote = notes.find((item) => item.id === this.state.activeId);
-		theNote[type] = e.target.value;
+        theNote[type] = e.target.value;
 		this.setState({
 			notes,
-		})
+        });
+        
+        firestore.doc(`/note/${this.state.activeId}`).update(theNote);
 	}
   
     handleAddNote = () => {
@@ -47,9 +71,9 @@ class App extends React.Component {
             notes: [
                 ...this.state.notes,
                 {
-                id,
-                title: '제목',
-                content: '내용',
+                    id,
+                    title: '제목',
+                    content: '내용',
                 },
             ],
             activeId: id,
@@ -57,15 +81,18 @@ class App extends React.Component {
     }
   
     handleDeleteNote = () => {
-        const notes = this.state.notes.filter((item) => item.id !== this.state.activeId);
+        firestore.doc(`/note/${this.state.activeId}`).delete().then(() => {
+            const notes = this.state.notes.filter((item) => item.id !== this.state.activeId);
 
-        this.setState({
-            notes,
-            activeId: notes.length === 0 ? null : notes[0].id,
-        })
+            this.setState({
+                notes,
+                activeId: notes.length === 0 ? null : notes[0].id,
+            });
+        });
     }
 
     render() {
+        console.log('ddddddd22')
         const { notes, activeId } = this.state;
         const activeNote = notes.filter(item => item.id === activeId)[0];
 
