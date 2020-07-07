@@ -3,7 +3,6 @@ import './index.css';
 
 class Note extends React.Component {
     render() {
-        console.log(this.props)
         const { theNote, onEditNote } = this.props;
         const { title, content } = theNote;
         return (

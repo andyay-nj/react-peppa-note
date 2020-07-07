@@ -6,31 +6,20 @@ import List from '../List';
 import Note from '../Note';
 import { generateId } from '../../util';
 import peppa7 from '../../image/peppa/peppa7.jpg';
-import { firestore, firebase, firedb } from '../../firebaseConfig';
+import { firestore, firedb } from '../../firebaseConfig';
 
 class App extends React.Component {
     state = stateObj;
     
     constructor() {
         super();
-        firebase.database().ref().child('note').limitToFirst(1).once('value', (data) => {
-            console.log(data)
-            console.log(data.val())
-        })
-        
-        // get()
-        // .then(docs => {
-        //     console.log(docs[0])
-            
-        //     docs.forEach(doc => {
-        //         if (doc.data()){
-        //             this.setState({ activeId: doc.data().id });
-        //         } else {
-        //             console.log('no?????')
-        //             throw break;
-        //         }
-        //     });
-        // });
+        firestore.collection('note').get()
+        .then(docs => {
+            docs.forEach(doc => {
+                this.setState({ activeId: doc.data().id });
+                return false;
+            });
+        });
     }
 
     componentWillMount() {
@@ -55,14 +44,14 @@ class App extends React.Component {
     }
 
 	handelEditNote = (type, e) => {
-		const notes = [...this.state.notes];
+        const notes = [...this.state.notes];
 		const theNote = notes.find((item) => item.id === this.state.activeId);
         theNote[type] = e.target.value;
 		this.setState({
 			notes,
         });
-        
-        firestore.doc(`/note/${this.state.activeId}`).update(theNote);
+
+        firestore.collection('note').doc(this.state.activeId).set(theNote);
 	}
   
     handleAddNote = () => {
@@ -92,7 +81,6 @@ class App extends React.Component {
     }
 
     render() {
-        console.log('ddddddd22')
         const { notes, activeId } = this.state;
         const activeNote = notes.filter(item => item.id === activeId)[0];
 
