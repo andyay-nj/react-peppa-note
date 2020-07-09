@@ -67,6 +67,7 @@ class App extends React.Component {
             ],
             activeId: id,
         });
+        console.log(id, this.state)
     }
   
     handleDeleteNote = () => {
