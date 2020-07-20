@@ -19,3 +19,8 @@
     white-space: nowrap;
     overflow: hidden;
 }
+@media screen and (max-width: 500px) {
+    .list-item {
+        padding: 5px 15px;
+    }
+}

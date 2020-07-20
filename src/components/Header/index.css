@@ -5,8 +5,8 @@ button {
     cursor: pointer;
 }
 .header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
     height: 40px;
     border-bottom: 0.1px solid #80808040;
 }
@@ -24,16 +24,21 @@ button {
 }
 .header-buttons {
     width: 100px;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 .header-image {
-    position: absolute;
+    /* position: absolute; */
     width: 50%;
-    top: -1px;
-    left: 20px;
+    /* top: -1px;
+    left: 20px; */
     transform: rotate(-4deg);
 }
 .header-image:hover {
     transform: rotate(8deg);
 }
+/* @media screen and (max-width: 365px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
